@@ -7,7 +7,8 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'Young Serif', serif;
+  font-family: 'Outfit', sans-serif;
+  color: var(--Stone-600);
 }
 
 :root {
@@ -30,10 +31,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 2%;
+  padding-block: 7%;
 }
 li::marker {
   color: var(--Rose-800);
+  font-size: 0.5rem;
 }
 ul {
   list-style-position: inside;
@@ -51,10 +53,10 @@ section > h2 {
   justify-content: flex-start;
   background-color: var(--White);
   height: max-content;
-  width: 42dvw;
-  padding: 2%;
+  width: 62dvw;
+  padding: 3%;
   border-radius: 20px;
-  gap: 50px;
+  gap: 15px;
 }
 #image-container {
   display: block;
@@ -72,14 +74,29 @@ header {
   
   h1 {
     font-weight: 500;
-    font-size: 3rem;
+    font-size: 32px;
     text-wrap: pretty;
+    color: black;
+    font-family: 'Young Serif', serif;
   }
   p {
     text-wrap: pretty;
-    font-family: 'Outfit', sans-serif;
     font-weight: 400;
+    font-size: 14px;
   }
+}
+.same-title {
+  font-family: 'Young Serif', serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.same-list {
+  gap: 10px;
+}
+.same-element {
+  font-size: 0.8rem;
+  padding-block: 1%;
+  padding-left: 1%;
 }
 #preparation {
   background-color: var(--Rose-50);
@@ -89,20 +106,97 @@ header {
   height: max-content;
   width: 100%;
   padding: 5%;
-  gap: 20px;
+  gap: 10px;
   .preparation--title {
     color: var(--Rose-800);
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 5px;
+    padding-left: 1%;
+    gap: 10px;
     li {
-      font-family: 'Outfit', sans-serif;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+#ingredients {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+  gap: 10px;
+  padding-bottom: 4%;
+  border-bottom: 1px solid var(--Stone-150);
+}
+.ingredients-list {
+  gap: 10px;
+}
+.ingredients-list--element {
+  font-size: 0.8rem;
+  padding-block: 1%;
+  padding-left: 1%;
+  &::marker {
+    color: var(--Brown-800);
+  }
+}
+
+#instructions {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+  gap: 0px;
+  padding-bottom: 4%;
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+.instruction-list {
+  padding-left: 3%;
+}
+
+.instructions-list--element {
+  &::marker {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}
+
+#nutritions {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: 100%;
+  gap: 0px;
+}
+
+.nutritions-p {
+  font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid var(--Stone-150);
+  th {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-block: 2%;
+    padding-inline: 5%;
+    justify-content: flex-start;
+    font-size: 0.8rem;
+    &:nth-child(1) {
+      font-weight: 500;
+    }
+    &:nth-child(2) {
+      color: var(--Brown-800);
     }
   }
 }
